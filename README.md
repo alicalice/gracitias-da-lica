@@ -1,2 +1,2 @@
 # gracitias-da-lica
-coisas que quis pôr
+coisinhas aleatórias que ando fazendo. principalmente estudo (se não for tudo)

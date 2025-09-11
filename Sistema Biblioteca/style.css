@@ -1,0 +1,48 @@
+button{
+    background: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background: #45a049;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    background: turquoise;
+    padding: 20px;
+}
+th, td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background: #4caf50;
+    color: white;
+
+}
+.delete{
+    background: #f44336;
+}
+h1, h2{
+    text-align: center;
+    color: #333;
+}
+form, table{
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+input, select, button {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

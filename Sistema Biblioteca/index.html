@@ -3,17 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Cadastro de Livros -->
 <body>
-    <h1>Sistema Biblioteca</h1>
-    <form id="formAluno">
-        <input type="text" id="nome" placeholder="Nome:" required>
-        <input type="number" id="idade" placeholder="Idade:" required>
-        <input type="text" id="curso" placeholder="Curso" required>
-        <input type="number" id="matricula" placeholder="Matrícula:" required>
-        <button type="submit">Cadastrar</button>
+    <h2>Sistema Biblioteca</h2>
+    
+    <form id="formLivro">
+    <input type="text" id="titulo" placeholder="Título:" required>
+    <input type="text" id="autor" placeholder="Autor:" required>
+    <input type="number" id="ano" placeholder="Ano:" required>
+    <select id="status">
+        <option value="Disponível">Disponível</option>
+        <option value="Emprestado">Emprestado</option>
+    </select>
+    
+    <button type="submit">Cadastrar Livro</button>
     </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Ano</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaLivros"></tbody>
+        
+    </table>
+
+    <!-- Cadastro Usuários -->
+    <h2>Cadastro de Usuários</h2>
+    <form id="formUsuario">
+        <input type="text" id="nomeUsuario" placeholder="Insira o nome do Usuário:">
+        <button type="submit">Cadastrar Usuário</button>
+    </form>
+     
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaUsuarios"></tbody>
+    </table>
+
+     <!-- Empréstimos -->
+    <h2>Empréstimos</h2>
+    <form id="formEmprestimo">
+        <select id="usuarioEmprestimo" required></select>
+        <select id="livroEmprestimo"></select>
+        <input type="date" id="dataEmprestimo" required>
+        <button type="submit">Registrar Empréstimo</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Usuário</th>
+                <th>Livro</th>
+                <th>Data</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaEmprestimos"></tbody>
+    </table>
+      
+    <script src="script.js"></script>
 
 </body>
 </html>
